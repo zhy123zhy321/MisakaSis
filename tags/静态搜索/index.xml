@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>静态搜索 on FliyingWorks</title>
-    <link>https://zhy123zhy321.github.io/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/</link>
+    <link>https://misakasis.me/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/</link>
     <description>Recent content in 静态搜索 on FliyingWorks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 19 Mar 2019 21:29:41 +0800</lastBuildDate>
     
-	<atom:link href="https://zhy123zhy321.github.io/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://misakasis.me/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>基于Algolia的静态搜索二</title>
-      <link>https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</link>
+      <link>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</link>
       <pubDate>Tue, 19 Mar 2019 21:29:41 +0800</pubDate>
       
-      <guid>https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</guid>
+      <guid>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</guid>
       <description>&lt;h5 id=&#34;基于algolia的静态搜索-二&#34;&gt;&lt;code&gt;# 基于Algolia的静态搜索（二）&lt;/code&gt;&lt;/h5&gt;</description>
     </item>
     
