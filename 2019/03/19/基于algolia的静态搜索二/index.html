@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>基于Algolia的静态搜索二 &middot; FliyingWorks</title>
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Misaka Sis">
+    
+      <meta name="description" content="一个分享技术的个人博客站点">
+    
+    
+    <link rel="canonical" href="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/"/>
+    <link rel="icon" href="https://zhy123zhy321.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://zhy123zhy321.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://zhy123zhy321.github.io/css/style.css">
+    <link rel="stylesheet" href="https://zhy123zhy321.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://zhy123zhy321.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://zhy123zhy321.github.io/fancybox/jquery.fancybox.css">
+    
+	
+    <link href='/css/googleapis1.css' rel='stylesheet' type='text/css'>
+    <link href='/css/googleapis2.css' rel='stylesheet' type='text/css'> 
+	<link rel="stylesheet" href="https://zhy123zhy321.github.io/live2d/css/live2d.css">
+    <meta property="og:title" content="基于Algolia的静态搜索二" />
+<meta property="og:description" content="# 基于Algolia的静态搜索（二）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/" />
+
+<meta property="og:image" content="https://zhy123zhy321.github.io/" />
+<meta property="article:published_time" content="2019-03-19T21:29:41&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-19T21:29:41&#43;08:00"/>
+
+    
+    
+<meta itemprop="name" content="基于Algolia的静态搜索二">
+<meta itemprop="description" content="# 基于Algolia的静态搜索（二）">
+
+
+<meta itemprop="datePublished" content="2019-03-19T21:29:41&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-19T21:29:41&#43;08:00" />
+<meta itemprop="wordCount" content="191">
+
+  <meta itemprop="image" content="https://zhy123zhy321.github.io/">
+
+
+
+<meta itemprop="keywords" content="Algolia,静态搜索," />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhy123zhy321.github.io/"/>
+
+<meta name="twitter:title" content="基于Algolia的静态搜索二"/>
+<meta name="twitter:description" content="# 基于Algolia的静态搜索（二）"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://zhy123zhy321.github.io/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://zhy123zhy321.github.io/css/images/logo.png')"></i>
+          
+          <span class="site-title">FliyingWorks</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://zhy123zhy321.github.io/">主页</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://zhy123zhy321.github.io/tags/">标签</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://zhy123zhy321.github.io/categories/">分类</a>
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">关于我</a>
+          
+
+          
+          
+          
+          
+          
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://zhy123zhy321.github.io/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="搜索">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://zhy123zhy321.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://zhy123zhy321.github.io/">主页</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://zhy123zhy321.github.io/tags/">标签</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://zhy123zhy321.github.io/categories/">分类</a></td>
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">关于我</a></td>
+          
+
+          
+          
+          
+          
+          
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://zhy123zhy321.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://zhy123zhy321.github.io/css/images/avatar.png">
+      
+      <h2 id="name">Misaka Sis</h2>
+      <h3 id="title">CSGO前职业玩家 - 软件工程师</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>中国 - 北京</span>
+      
+          <a id="follow" href="https://space.bilibili.com/2100255">
+              关注
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        3
+        <span>帖子</span>
+      </div>
+      <div class="article-info-block">
+        
+          6
+        
+        <span>
+            标签
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/zhy123zhy321" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+<td><a href="//steamcommunity.com/id/zhy123zhy321" target="_blank" title="Steam"><i class="fa fa-steam"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//facebook.com/100034265932846" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></td>
+
+
+
+
+		  <td><a href="https://zhy123zhy321.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/">
+    <h1 class="article-title" itemprop="name">
+        基于Algolia的静态搜索二
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-03-19 21:29:41 &#43;0800 CST" itemprop="datePublished">2019-03-19</time>
+            &middot;
+            191
+            字
+            &middot;
+            1
+            分钟
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://zhy123zhy321.github.io/categories/%E5%89%8D%E7%AB%AF">前端</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://zhy123zhy321.github.io/tags/algolia">Algolia</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://zhy123zhy321.github.io/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2">静态搜索</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <h5 id="基于algolia的静态搜索-二"><code># 基于Algolia的静态搜索（二）</code></h5>
+
+<ol>
+<li>先安装node.js <a href="https://nodejs.org/en/"><code>Node官网</code></a></li>
+</ol>
+
+<p>各系统安装不同就不在这里说了</p>
+
+<ol>
+<li><p>创建一个目录</p></li>
+
+<li><p>执行npx</p></li>
+</ol>
+
+<pre><code class="language-bash">   npx create-instantsearch-app ais-ecommerce-demo-app
+</code></pre>
+
+<ol>
+<li>选择InstantSearch.js 回车确认</li>
+</ol>
+
+<pre><code class="language-bash">   npx: installed 146 in 20.221s
+   
+   Creating a new InstantSearch app in ais-ecommerce-demo-app.
+   
+   ? InstantSearch template (Use arrow keys)
+     Web
+   &gt; Angular InstantSearch
+     InstantSearch.js
+     React InstantSearch
+     Vue InstantSearch
+     Mobile
+     InstantSearch Android
+     InstantSearch iOS
+     React InstantSearch Native
+</code></pre>
+
+<ol>
+<li>选择版本</li>
+</ol>
+
+<pre><code class="language-bash">   ? InstantSearch template InstantSearch.js
+   ? InstantSearch.js version (Use arrow keys)
+     Latest stable version (recommended)
+   &gt; 3.2.1
+     All versions
+     3.2.1
+     3.2.0
+     3.1.1
+     3.1.0
+   (Move up and down to reveal more choices)
+</code></pre>
+
+<ol>
+<li>接下来输入你的Application ID等</li>
+</ol>
+
+<pre><code class="language-bash">   ? InstantSearch template InstantSearch.js
+   ? InstantSearch.js version 3.2.1
+   ? Application ID 7MXMJHTAW7
+   ? Search API key 1d9ed3a31ec6ef9514f2ad7d174a97c9
+   ? Index name MisakaSis
+</code></pre>
+
+<ol>
+<li>选择需要显示的字段，上下翻页，空格选择，回车确认</li>
+</ol>
+
+<pre><code class="language-bash">     Used to generate the default result template
+    ──────────────
+    From your index
+    (*) title
+    (*) description
+    ( ) uri
+   &gt;( ) content
+    (*) date
+    (*) banner
+    (*) categories
+    ( ) images
+   (Move up and down to reveal more choices)
+</code></pre>
+
+<ol>
+<li>接下来会提示两个警告，大概就是版本被弃用了，有更改好的替代，不用管。</li>
+</ol>
+
+<pre><code class="language-bash">   npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, fl
+   atted is its successor.
+   npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Bro
+   wserslist &gt;3.0 config used in other tools.
+</code></pre>
+
+<ol>
+<li>成功提示</li>
+</ol>
+
+<pre><code>      Created ais-ecommerce-demo-app at ais-ecommerce-demo-app.
+   
+   Begin by typing:
+   
+     cd ais-ecommerce-demo-app
+     npm start
+   
+   ⚡️  Start building something awesome!
+</code></pre>
+
+<ol>
+<li>按上面说的打开目录，运行npm。</li>
+</ol>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/" data-id="69b0d3bd4daa902fe4b86ccd27c86078" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-pinterest" target="_blank" title="Weibo"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-google" target="_blank" title="Pinterest"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://zhy123zhy321.github.io/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          下一篇
+      </strong>
+      <div class="article-nav-title">剑侠情缘服务端和GM搭建教程</div>
+    </a>
+    
+
+    
+</nav>
+
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "misakasis" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        最近
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://zhy123zhy321.github.io/categories/%E5%89%8D%E7%AB%AF">
+                        前端
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://zhy123zhy321.github.io/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/" class="title">基于Algolia的静态搜索二</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-03-19 21:29:41 &#43;0800 CST" itemprop="datePublished">2019-03-19</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://zhy123zhy321.github.io/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://zhy123zhy321.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8">
+                        服务器
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://zhy123zhy321.github.io/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="title">剑侠情缘服务端和GM搭建教程</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-11-12 15:16:43 &#43;0800 CST" itemprop="datePublished">2018-11-12</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://zhy123zhy321.github.io/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://zhy123zhy321.github.io/banners/placeholder.png)" alt="基于Algolia的静态搜索二" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://zhy123zhy321.github.io/categories/%E5%88%86%E7%B1%BB1">
+                        分类1
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://zhy123zhy321.github.io/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/" class="title">标准文档</a></p>
+                    <p class="item-date">
+                        <time datetime="2011-01-11 11:11:11 &#43;0800 CST" itemprop="datePublished">2011-01-11</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/categories/%E5%88%86%E7%B1%BB1">
+                    分类1
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/categories/%E5%88%86%E7%B1%BB2">
+                    分类2
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/categories/%E5%89%8D%E7%AB%AF">
+                    前端
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8">
+                    服务器
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        标签
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/algolia">
+                    algolia
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98">
+                    剑侠情缘
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B">
+                    搭建教程
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/%E6%A0%87%E7%AD%BE1">
+                    标签1
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/%E6%A0%87%E7%AD%BE2">
+                    标签2
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://zhy123zhy321.github.io/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2">
+                    静态搜索
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        云标签
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/algolia" style="font-size: 12px;">algolia</a>
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98" style="font-size: 12px;">剑侠情缘</a>
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B" style="font-size: 12px;">搭建教程</a>
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/%E6%A0%87%E7%AD%BE1" style="font-size: 12px;">标签1</a>
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/%E6%A0%87%E7%AD%BE2" style="font-size: 12px;">标签2</a>
+        
+        
+        <a href="https://zhy123zhy321.github.io/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2" style="font-size: 12px;">静态搜索</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="/">MisakaSis</a>. Search by <a href="/search.html">FlyingWorks</a>.
+    </div>
+  </div>
+</footer>
+<div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="240" height="340" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+</div>
+
+<script src="https://zhy123zhy321.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://zhy123zhy321.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="https://zhy123zhy321.github.io/live2d/js/live2d.js"></script>
+<script src="https://zhy123zhy321.github.io/live2d/js/message.js"></script>
+<script type="text/javascript">
+		window.onload=function(){
+			loadlive2d("live2d", "https:\/\/zhy123zhy321.github.io\/live2d\/model\/tia\/model.json");
+			}
+		
+</script>
+
+
+
+
+</body>
+</html>

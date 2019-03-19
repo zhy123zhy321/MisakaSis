@@ -1,0 +1,69 @@
+[
+    {
+        "title": "剑侠情缘服务端和GM搭建教程",
+        "uri": "post/剑侠情缘服务端和GM搭建教程",
+        "content": "1H2G     Centos7 5                    1H2G      2H4G                      bash yum  y update          bash        systemctl stop firewalld          systemctl disable firewalld              nginx 1 14  Mysql5 6  PHP5 3                   ip           root    811051558 MYSQL      bash mysql  u root  p811051558 GRANT PRIVILEGES    root      IDENTIFIED  811051558  GRANT OPTION  FLUSH PRIVILEGES  quit systemctl restart mysqld     gcc    bash yum install gcc  y yum install gcc c    y yum install glibc   y    libstdc   so 6 0 20    usr lib64   bash cd  usr lib64 rm  rf libstdc   so 6 ln  s libstdc   so 6 0 20 libstdc   so 6 ldconfig   home zip        www zip     jxqy          www wwwroot xxx xxx xxx xxx         bash cd   unzip home zip chmod  R 777  home       unzip not found    bash yum install unzip       9     IP              home jxqy       FileServer ini   MYSQL     gateway ini   IP MYSQL     world_server ini   IP MYSQL   192 168 1 102       IP        IP         FileServer ini   MYSQL        GoJxHttpSetting   go jxhttp json go jxhttp_idip json MYSQL       IP              bash  home jxqy package idx  home jxqy package0 dat                     GatewayIP    IP         bash  www wwwroot xxx xxx xxx xxx android pack idx CP  www wwwroot xxx xxx xxx xxx android pack0 dat CP                     GatewayIP    IP Skip 0  Skip 1        ApkIDE  apk        UpdateUrlAndroid ini      UpdateUrlIPhone ini       bash cd  home jxqy    start sh         bash cd  home jxqy    stop sh                   bash netstat  tlnp              bash  www wwwroot xxx xxx xxx xxx android GameVersion  www wwwroot xxx xxx xxx xxx android GameVersion version txt        1 40011          1  bash  www wwwroot xxx xxx xxx xxx android GameVersion update_400008 ini     IP   apk                                           24                   br2a                xh2e GM       qugc                                                                                            4 0",
+        "objectID": "post/剑侠情缘服务端和GM搭建教程",
+        "date": "2018-11-12T07:16:43.000Z",
+        "draft": false,
+        "banner": "",
+        "categories": [
+            "服务器"
+        ],
+        "description": "",
+        "images": [
+            ""
+        ],
+        "menu": "",
+        "tags": [
+            "剑侠情缘",
+            "搭建教程"
+        ],
+        "search": "/2018/11/12/剑侠情缘服务端和gm搭建教程/"
+    },
+    {
+        "title": "标准文档",
+        "uri": "post/标准文档",
+        "content": "Hello World                           description      more",
+        "objectID": "post/标准文档",
+        "date": "2011-01-11T03:11:11.000Z",
+        "draft": false,
+        "banner": "banners/placeholder.png",
+        "categories": [
+            "分类1",
+            "分类2"
+        ],
+        "description": "`这是一个用于复制的标准文档`",
+        "images": [
+            ""
+        ],
+        "menu": "",
+        "tags": [
+            "标签1",
+            "标签2"
+        ],
+        "search": "/2011/01/11/标准文档/"
+    },
+    {
+        "title": "基于Algolia的静态搜索二",
+        "uri": "post/静态搜索二",
+        "content": "Algolia            node js Node                           npx  bash npx create instantsearch app ais ecommerce demo app     InstantSearch js       bash npx  installed 146 20 221s Creating new InstantSearch app ais ecommerce demo app    InstantSearch template  Use arrow keys  Web   Angular InstantSearch InstantSearch js React InstantSearch Vue InstantSearch Mobile InstantSearch Android InstantSearch iOS React InstantSearch Native         bash   InstantSearch template InstantSearch js   InstantSearch js version  Use arrow keys  Latest stable version  recommended    3 2 1 versions 3 2 1 3 2 0 3 1 1 3 1 0  Move down reveal choices           Application ID   bash   InstantSearch template InstantSearch js   InstantSearch js version 3 2 1   Application ID 7MXMJHTAW7   Search API key 1d9ed3a31ec6ef9514f2ad7d174a97c9   Index name MisakaSis                             bash Used generate default result template                index     title     description     uri      content     date     banner     categories     images  Move down reveal choices                                        bash npm WARN deprecated circular json 0 3 3  CircularJSON maintenance only  fl atted its successor  npm WARN deprecated browserslist 1 7 7  Browserslist 2 fail reading Bro wserslist  3 0 config used tools           Created ais ecommerce demo app ais ecommerce demo app  Begin typing  cd ais ecommerce demo app npm start    Start building something awesome                npm",
+        "objectID": "post/静态搜索二",
+        "date": "2019-03-19T13:29:41.000Z",
+        "draft": false,
+        "banner": "",
+        "categories": [
+            "前端"
+        ],
+        "description": "",
+        "images": [
+            ""
+        ],
+        "menu": "",
+        "tags": [
+            "Algolia",
+            "静态搜索"
+        ],
+        "search": "/2019/03/19/基于Algolia的静态搜索二/"
+    }
+]

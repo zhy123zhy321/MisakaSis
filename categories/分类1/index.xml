@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分类1 on FliyingWorks</title>
+    <link>https://zhy123zhy321.github.io/categories/%E5%88%86%E7%B1%BB1/</link>
+    <description>Recent content in 分类1 on FliyingWorks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Jan 2011 11:11:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://zhy123zhy321.github.io/categories/%E5%88%86%E7%B1%BB1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>标准文档</title>
+      <link>https://zhy123zhy321.github.io/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Tue, 11 Jan 2011 11:11:11 +0800</pubDate>
+      
+      <guid>https://zhy123zhy321.github.io/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;Hello World~&lt;/p&gt;
+
+&lt;p&gt;你好，世界~&lt;/p&gt;
+
+&lt;p&gt;本地图片载入形式&lt;/p&gt;
+
+&lt;div class=&#34;article-gallery&#34;&gt;
+    &lt;div class=&#34;article-gallery-photos&#34;&gt;
+        
+        &lt;a class=&#34;article-gallery-img fancybox&#34; href=&#34;banners/placeholder.png&#34; rel=&#34;group1&#34;&gt;
+            &lt;img src=&#34;https://zhy123zhy321.github.io/banners/placeholder.png&#34; itemprop=&#34;image&#34;&gt;
+        &lt;/a&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
