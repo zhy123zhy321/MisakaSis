@@ -338,22 +338,22 @@ $ git init
 $ git add -A
 $ git commit -m &quot;first commit&quot;
 $ git remote add origin git@github.com:xxxxxx/xxxxxxx.git（你的仓库ssh）
-$ git push -u orgin master
+$ git push -u origin master
 </code></pre>
 
 <p>以后每次 运行 hugo 命令 之后 使用如下命令将本地更新推送到 GitHub</p>
 
 <pre><code>$ git add -A
 $ git commit -m &quot;xxxx commit&quot;
-$ git push -u orgin master
+$ git push -u origin master
 </code></pre>
 
 <p>如果推送不过去可以使用强制推送或者先拉下来再推</p>
 
-<pre><code>$ git push -u orgin master -f
+<pre><code>$ git push -u origin master -f
 或者
 $ git pull origin master
-$ git push -u orgin master
+$ git push -u origin master
 </code></pre>
 
 <p>如果嫌弃每次都要这样输入很多太麻烦，官方给出的解决方案是建立一个脚本每次执行它。</p>
