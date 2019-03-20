@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>前端 &middot; FliyingWorks</title>
+    <title>基于Algolia的静态搜索 &middot; FliyingWorks</title>
     <meta name="generator" content="Hugo 0.54.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,10 +10,7 @@
       <meta name="description" content="一个分享技术的个人博客站点">
     
     
-      <link href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="alternate" type="application/rss+xml" title="FliyingWorks" />
-      <link href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="feed" type="application/rss+xml" title="FliyingWorks" />
-    
-    <link rel="canonical" href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    <link rel="canonical" href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/"/>
     <link rel="icon" href="https://misakasis.me/favicon.ico">
     <link rel="apple-touch-icon" href="https://misakasis.me/apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://misakasis.me/css/style.css">
@@ -25,22 +22,66 @@
     <link href='/css/googleapis1.css' rel='stylesheet' type='text/css'>
     <link href='/css/googleapis2.css' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="https://misakasis.me/live2d/css/live2d.css">
-    <meta property="og:title" content="前端" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/" />
+    <meta property="og:title" content="基于Algolia的静态搜索" />
+<meta property="og:description" content="
+先安装node.js Node官网
 
-<meta property="og:updated_time" content="2019-03-19T21:29:41&#43;08:00"/>
+
+各系统安装不同就不在这里说了
+
+
+创建一个目录
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" />
+
+<meta property="og:image" content="https://misakasis.me/" />
+<meta property="article:published_time" content="2019-03-19T21:29:41&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-19T21:29:41&#43;08:00"/>
 
     
     
-<meta itemprop="name" content="前端">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="基于Algolia的静态搜索">
+<meta itemprop="description" content="
+先安装node.js Node官网
 
 
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="前端"/>
-<meta name="twitter:description" content=""/>
+各系统安装不同就不在这里说了
+
+
+创建一个目录
+
+
+">
+
+
+<meta itemprop="datePublished" content="2019-03-19T21:29:41&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-19T21:29:41&#43;08:00" />
+<meta itemprop="wordCount" content="265">
+
+  <meta itemprop="image" content="https://misakasis.me/">
+
+
+
+<meta itemprop="keywords" content="Algolia,静态搜索," />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://misakasis.me/"/>
+
+<meta name="twitter:title" content="基于Algolia的静态搜索"/>
+<meta name="twitter:description" content="
+先安装node.js Node官网
+
+
+各系统安装不同就不在这里说了
+
+
+创建一个目录
+
+
+"/>
 
     
 
@@ -252,45 +293,353 @@
 
     <section id="main">
     
-    
-    
-    
-    <section class="archives-wrap">
-        <div class="archive-category-wrap">
-            <span class="archive-category">前端</span>
-        </div>
-        <div class="archives">
-            
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" class="thumbnail">
-                <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/">基于Algolia的静态搜索</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2019-03-19 21:29:41 &#43;0800 CST" itemprop="datePublished">2019-03-19</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-        </div>
-    </section>
-    <nav id="page-nav">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://misakasis.me/banners/changan.jpg" class="article-banner">
+        
 
+        <header class="article-header">
+    <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/">
+    <h1 class="article-title" itemprop="name">
+        基于Algolia的静态搜索
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-03-19 21:29:41 &#43;0800 CST" itemprop="datePublished">2019-03-19</time>
+            &middot;
+            265
+            字
+            &middot;
+            2
+            分钟
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF">前端</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/tags/algolia">Algolia</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/tags/%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2">静态搜索</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <ol>
+<li>先安装node.js <a href="https://nodejs.org/en/"><code>Node官网</code></a></li>
+</ol>
+
+<p>各系统安装不同就不在这里说了</p>
+
+<ol>
+<li>创建一个目录
+
+<br /></li>
+</ol>
+
+<ol>
+<li>执行npx</li>
+</ol>
+
+<pre><code class="language-bash">   npx create-instantsearch-app ais-ecommerce-demo-app
+</code></pre>
+
+<ol>
+<li>选择InstantSearch.js 回车确认</li>
+</ol>
+
+<pre><code class="language-bash">   npx: installed 146 in 20.221s
+   
+   Creating a new InstantSearch app in ais-ecommerce-demo-app.
+   
+   ? InstantSearch template (Use arrow keys)
+     Web
+   &gt; Angular InstantSearch
+     InstantSearch.js
+     React InstantSearch
+     Vue InstantSearch
+     Mobile
+     InstantSearch Android
+     InstantSearch iOS
+     React InstantSearch Native
+</code></pre>
+
+<ol>
+<li>选择版本</li>
+</ol>
+
+<pre><code class="language-bash">   ? InstantSearch template InstantSearch.js
+   ? InstantSearch.js version (Use arrow keys)
+     Latest stable version (recommended)
+   &gt; 3.2.1
+     All versions
+     3.2.1
+     3.2.0
+     3.1.1
+     3.1.0
+   (Move up and down to reveal more choices)
+</code></pre>
+
+<ol>
+<li>接下来输入你的Application ID等</li>
+</ol>
+
+<pre><code class="language-bash">   ? InstantSearch template InstantSearch.js
+   ? InstantSearch.js version 3.2.1
+   ? Application ID xxxxxxxxx
+   ? Search API key xxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ? Index name xxxxxxx
+</code></pre>
+
+<ol>
+<li>选择需要显示的字段，上下翻页，空格选择，回车确认</li>
+</ol>
+
+<pre><code class="language-bash">     Used to generate the default result template
+    ──────────────
+    From your index
+    (*) title
+    (*) description
+    ( ) uri
+   &gt;( ) content
+    (*) date
+    (*) banner
+    (*) categories
+    ( ) images
+   (Move up and down to reveal more choices)
+</code></pre>
+
+<ol>
+<li>接下来会提示两个警告，大概就是版本被弃用了，有更改好的替代，不用管。</li>
+</ol>
+
+<pre><code class="language-bash">   npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, fl
+   atted is its successor.
+   npm WARN deprecated browserslist@1.7.7: Browserslist 2 could fail on reading Bro
+   wserslist &gt;3.0 config used in other tools.
+</code></pre>
+
+<ol>
+<li>成功提示</li>
+</ol>
+
+<pre><code>      Created ais-ecommerce-demo-app at ais-ecommerce-demo-app.
+   
+   Begin by typing:
+   
+     cd ais-ecommerce-demo-app
+     npm start
+   
+   ⚡️  Start building something awesome!
+</code></pre>
+
+<ol>
+<li>按上面说的打开目录，运行npm。</li>
+</ol>
+
+<h3 id="为aligolia上传搜索json数据">为aligolia上传搜索JSON数据</h3>
+
+<p>要使用 API 的方式来添加搜索的数据，我们可以自己根据 Algolia 提供的 <a href="https://link.juejin.im/?target=https%3A%2F%2Fwww.algolia.com%2Fdoc%2Fapi-reference%2F">API 文档</a>进行开发，这也是很容易的，为简单起见，我们这里使用一个<code>hugo-algolia</code>的插件来完成我们的数据同步工作。</p>
+
+<blockquote>
+<p>要安装<code>hugo-aligolia</code>我们需要先确保我们已经安装了 npm 或者 yarn 包管理工具。</p>
+</blockquote>
+
+<p>使用下面的命令安装即可：</p>
+
+<pre><code>$ npm install hugo-algolia -g
+</code></pre>
+
+<p>安装完成后，在我们 hugo 生产的静态页面的根目录下面新建一个<code>config.yaml</code>的文件(和<code>config.toml</code>同级)，然后在<code>config.yaml</code>文件中指定 <code>Algolia</code>相关的 API 数据。</p>
+
+<pre><code>---
+baseurl: &quot;/&quot;
+DefaultContentLanguage: &quot;zh-cn&quot;
+hasCJKLanguage: true
+languageCode: &quot;zh-cn&quot;
+title: &quot;River's Site&quot;
+theme: &quot;你的hugo主题名&quot;
+metaDataFormat: &quot;yaml&quot;
+algolia:
+  index: &quot;填写你的index&quot;
+  key: &quot;填写你的key&quot;
+  appID: &quot;填写你的id&quot;
+---
+</code></pre>
+
+<blockquote>
+<p>API 相关数据可以前往 algolia后台 的 <code>API Keys</code>查看，注意上面的<code>key</code>是<strong>Admin API Key</strong>。</p>
+</blockquote>
+
+<p>配置完成以后，在hugo生成的根目录下面执行下面的命令：</p>
+
+<pre><code>$ hugo-algolia -s
+JSON index file was created in public/algolia.json
+{ updatedAt: '2019-03-20T06:41:38.896Z', taskID: XXXXXXXXX }
+</code></pre>
+
+<p>上面命令执行完成后会在<code>public</code>目录下面生成一个<code>algolia.json</code>的文件。</p>
+
+<p>这个时候打开algolia网站，可以看到已经有数据了。</p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" data-id="3dc3e6ef992a65262c3d072d15d26632" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-pinterest" target="_blank" title="Weibo"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-google" target="_blank" title="Pinterest"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://misakasis.me/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          下一篇
+      </strong>
+      <div class="article-nav-title">剑侠情缘服务端和GM搭建教程</div>
+    </a>
+    
+
+    
+    <a href="https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          上一篇
+      </strong>
+      <div class="article-nav-title">树莓派web生产环境搭建</div>
+    </a>
+    
 </nav>
 
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
     
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "misakasis" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
 
     </section>
 
@@ -308,7 +657,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -334,7 +683,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bhh4kcmj30j80a6gnb.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bhh4kcmj30j80a6gnb.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -360,7 +709,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" class="thumbnail">
                     
-                        <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -386,7 +735,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bzxwyfmj30j80c10tx.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bzxwyfmj30j80c10tx.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -412,7 +761,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/" class="thumbnail">
                     
-                        <span style="background-image:url(https://misakasis.me/banners/placeholder.png)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://misakasis.me/banners/placeholder.png)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
                     
                     </a>
                 </div>

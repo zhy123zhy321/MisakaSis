@@ -6,18 +6,50 @@
     <description>Recent content in Posts on FliyingWorks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 19 Mar 2019 21:29:41 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 14:53:12 +0800</lastBuildDate>
     
 	<atom:link href="https://misakasis.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>基于Algolia的静态搜索二</title>
-      <link>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</link>
+      <title>Hugo中使用git上传至github</title>
+      <link>https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/</link>
+      <pubDate>Wed, 20 Mar 2019 14:53:12 +0800</pubDate>
+      
+      <guid>https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/</guid>
+      <description>&lt;p&gt;git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>树莓派web生产环境搭建</title>
+      <link>https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Wed, 20 Mar 2019 08:19:51 +0800</pubDate>
+      
+      <guid>https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>&lt;h4 id=&#34;网络配置&#34;&gt;网络配置&lt;/h4&gt;
+
+&lt;p&gt;tf卡根目录中保存一个叫&lt;code&gt;ssh&lt;/code&gt;的空文件，为了打开ssh功能。&lt;/p&gt;
+
+&lt;p&gt;再保存一个wpa_supplicant.conf&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于Algolia的静态搜索</title>
+      <link>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/</link>
       <pubDate>Tue, 19 Mar 2019 21:29:41 +0800</pubDate>
       
-      <guid>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2%E4%BA%8C/</guid>
-      <description>&lt;h5 id=&#34;基于algolia的静态搜索-二&#34;&gt;&lt;code&gt;# 基于Algolia的静态搜索（二）&lt;/code&gt;&lt;/h5&gt;</description>
+      <guid>https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;先安装node.js &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;&lt;code&gt;Node官网&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;各系统安装不同就不在这里说了&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;创建一个目录
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on FliyingWorks</title>
+    <link>https://misakasis.me/tags/hugo/</link>
+    <description>Recent content in Hugo on FliyingWorks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Mar 2019 14:53:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://misakasis.me/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo中使用git上传至github</title>
+      <link>https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/</link>
+      <pubDate>Wed, 20 Mar 2019 14:53:12 +0800</pubDate>
+      
+      <guid>https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/</guid>
+      <description>&lt;p&gt;git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

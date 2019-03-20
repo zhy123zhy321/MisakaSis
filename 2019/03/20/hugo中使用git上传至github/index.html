@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>前端 &middot; FliyingWorks</title>
+    <title>Hugo中使用git上传至github &middot; FliyingWorks</title>
     <meta name="generator" content="Hugo 0.54.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,10 +10,7 @@
       <meta name="description" content="一个分享技术的个人博客站点">
     
     
-      <link href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="alternate" type="application/rss+xml" title="FliyingWorks" />
-      <link href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="feed" type="application/rss+xml" title="FliyingWorks" />
-    
-    <link rel="canonical" href="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/"/>
+    <link rel="canonical" href="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/"/>
     <link rel="icon" href="https://misakasis.me/favicon.ico">
     <link rel="apple-touch-icon" href="https://misakasis.me/apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://misakasis.me/css/style.css">
@@ -25,22 +22,36 @@
     <link href='/css/googleapis1.css' rel='stylesheet' type='text/css'>
     <link href='/css/googleapis2.css' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="https://misakasis.me/live2d/css/live2d.css">
-    <meta property="og:title" content="前端" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://misakasis.me/categories/%E5%89%8D%E7%AB%AF/" />
+    <meta property="og:title" content="Hugo中使用git上传至github" />
+<meta property="og:description" content="git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/" />
 
-<meta property="og:updated_time" content="2019-03-19T21:29:41&#43;08:00"/>
+<meta property="og:image" content="https://misakasis.me/" />
+<meta property="article:published_time" content="2019-03-20T14:53:12&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-20T14:53:12&#43;08:00"/>
 
     
     
-<meta itemprop="name" content="前端">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="Hugo中使用git上传至github">
+<meta itemprop="description" content="git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：">
 
 
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="前端"/>
-<meta name="twitter:description" content=""/>
+<meta itemprop="datePublished" content="2019-03-20T14:53:12&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-20T14:53:12&#43;08:00" />
+<meta itemprop="wordCount" content="264">
+
+  <meta itemprop="image" content="https://misakasis.me/">
+
+
+
+<meta itemprop="keywords" content="github,hugo," />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://misakasis.me/"/>
+
+<meta name="twitter:title" content="Hugo中使用git上传至github"/>
+<meta name="twitter:description" content="git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下："/>
 
     
 
@@ -252,45 +263,261 @@
 
     <section id="main">
     
-    
-    
-    
-    <section class="archives-wrap">
-        <div class="archive-category-wrap">
-            <span class="archive-category">前端</span>
-        </div>
-        <div class="archives">
-            
-            
-                <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            
-            <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" class="thumbnail">
-                <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="基于Algolia的静态搜索" class="thumbnail-image"></span>
-            </a>
-            
-        </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/">基于Algolia的静态搜索</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2019-03-19 21:29:41 &#43;0800 CST" itemprop="datePublished">2019-03-19</time>
-            </div>
-        </header>
-    </div>
-</article>
- 
-            
-        </div>
-    </section>
-    <nav id="page-nav">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg" class="article-banner">
+        
 
+        <header class="article-header">
+    <a href="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/">
+    <h1 class="article-title" itemprop="name">
+        Hugo中使用git上传至github
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-03-20 14:53:12 &#43;0800 CST" itemprop="datePublished">2019-03-20</time>
+            &middot;
+            264
+            字
+            &middot;
+            2
+            分钟
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8">服务器</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/tags/github">github</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://misakasis.me/tags/hugo">hugo</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：</p>
+
+<ul>
+<li>登录 git 新建仓库 如果要使用GitHubPages命名要以 <strong>XXXXXX.github.io</strong>。</li>
+<li>如果用 ssh 方式连接GitHub需先添加<strong>SSH keys</strong> 详见下文中的参考教程，不细说了；</li>
+<li>在 pbulic 文件夹内建立 git；</li>
+</ul>
+
+<pre><code>$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;
+$ ssh-add ~/.ssh/id_rsa
+$ git init 
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git remote add origin git@github.com:xxxxxx/xxxxxxx.git（你的仓库ssh）
+$ git push -u orgin master
+</code></pre>
+
+<p>以后每次 运行 hugo 命令 之后 使用如下命令将本地更新推送到 GitHub</p>
+
+<pre><code>$ git add -A
+$ git commit -m &quot;xxxx commit&quot;
+$ git push -u orgin master
+</code></pre>
+
+<p>如果推送不过去可以使用强制推送或者先拉下来再推</p>
+
+<pre><code>$ git push -u orgin master -f
+或者
+$ git pull origin master
+$ git push -u orgin master
+</code></pre>
+
+<p>如果嫌弃每次都要这样输入很多太麻烦，官方给出的解决方案是建立一个脚本每次执行它。</p>
+
+<p>具体如下：</p>
+
+<h3 id="put-it-into-a-script">Put it Into a Script</h3>
+
+<p>You’re almost done. You can also add a <code>deploy.sh</code> script to automate the preceding steps for you. You can also make it executable with <code>chmod +x deploy.sh</code>.</p>
+
+<p>The following are the contents of the <code>deploy.sh</code> script:</p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+</code></pre>
+
+<p>You can then run <code>./deploy.sh &quot;Your optional commit message&quot;</code> to send changes to <code>&lt;USERNAME&gt;.github.io</code>. Note that you likely will want to commit changes to your <code>&lt;YOUR-PROJECT&gt;</code> repository as well.</p>
+
+<p>That’s it! Your personal page should be up and running at <code>https://&lt;USERNAME&gt;.github.io</code> within a couple minutes.</p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/" data-id="df90fa0012e1d00ed908f23137609871" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-pinterest" target="_blank" title="Weibo"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-google" target="_blank" title="Pinterest"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          下一篇
+      </strong>
+      <div class="article-nav-title">树莓派web生产环境搭建</div>
+    </a>
+    
+
+    
 </nav>
 
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
     
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "misakasis" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
 
     </section>
 
@@ -308,7 +535,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/20/hugo%E4%B8%AD%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E8%87%B3github/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg)" alt="Hugo中使用git上传至github" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -334,7 +561,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/20/%E6%A0%91%E8%8E%93%E6%B4%BEweb%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bhh4kcmj30j80a6gnb.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bhh4kcmj30j80a6gnb.jpg)" alt="Hugo中使用git上传至github" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -360,7 +587,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2019/03/19/%E5%9F%BA%E4%BA%8Ealgolia%E7%9A%84%E9%9D%99%E6%80%81%E6%90%9C%E7%B4%A2/" class="thumbnail">
                     
-                        <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://misakasis.me/banners/changan.jpg)" alt="Hugo中使用git上传至github" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -386,7 +613,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2018/11/12/%E5%89%91%E4%BE%A0%E6%83%85%E7%BC%98%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8Cgm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="thumbnail">
                     
-                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bzxwyfmj30j80c10tx.jpg)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://ws3.sinaimg.cn/large/005BYqpgly1g19bzxwyfmj30j80c10tx.jpg)" alt="Hugo中使用git上传至github" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -412,7 +639,7 @@
                 <div class="item-thumbnail">
                     <a href="https://misakasis.me/2011/01/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3/" class="thumbnail">
                     
-                        <span style="background-image:url(https://misakasis.me/banners/placeholder.png)" alt="前端" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://misakasis.me/banners/placeholder.png)" alt="Hugo中使用git上传至github" class="thumbnail-image"></span>
                     
                     </a>
                 </div>

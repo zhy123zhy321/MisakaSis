@@ -1,12 +1,56 @@
 [
     {
+        "title": "Hugo中使用git上传至github",
+        "uri": "post/Hugo中使用git上传至github",
+        "content": "git          pbulic      git   git remote                   git           GitHubPages     XXXXXX github io      ssh     GitHub    SSH keys                    pbulic        git      ssh keygen  t rsa  C          ssh add    ssh id_rsa   git init   git add  A   git commit  m  first commit    git remote add origin git github com xxxxxx xxxxxxx git     ssh    git push  u orgin master           hugo                      GitHub     git add  A   git commit  m  xxxx commit    git push  u orgin master                               git push  u orgin master  f      git pull origin master   git push  u orgin master                                                  Put Script You re almost done  add deploy sh script automate preceding steps you  executable chmod  x deploy sh  following contents deploy sh script       bin bash echo  e   033 0 32mDeploying updates GitHub    033 0m  Build project  hugo   using theme  replace hugo  t Go Public folder cd public Add changes git  git add   Commit changes  msg  rebuilding site date        eq 1   msg   1  fi git commit  m   msg  Push source build repos  git push origin master Back Project Root cd      run   deploy sh  Your optional commit message  send changes  github io  Note likely will want commit changes    repository well  That s it  personal page running https    github io within couple minutes",
+        "objectID": "post/Hugo中使用git上传至github",
+        "date": "2019-03-20T06:53:12.000Z",
+        "draft": false,
+        "banner": "https://ws3.sinaimg.cn/large/005BYqpggy1g19c09va0gj30j80asq4a.jpg",
+        "categories": [
+            "服务器"
+        ],
+        "description": "",
+        "images": [
+            ""
+        ],
+        "menu": "",
+        "tags": [
+            "github",
+            "hugo"
+        ],
+        "search": "/2019/03/20/Hugo中使用git上传至github/"
+    },
+    {
+        "title": "基于Algolia的静态搜索",
+        "uri": "post/Hugo利用Algolia的静态搜索",
+        "content": "node js Node                           npx  bash npx create instantsearch app ais ecommerce demo app     InstantSearch js       bash npx  installed 146 20 221s Creating new InstantSearch app ais ecommerce demo app    InstantSearch template  Use arrow keys  Web   Angular InstantSearch InstantSearch js React InstantSearch Vue InstantSearch Mobile InstantSearch Android InstantSearch iOS React InstantSearch Native         bash   InstantSearch template InstantSearch js   InstantSearch js version  Use arrow keys  Latest stable version  recommended    3 2 1 versions 3 2 1 3 2 0 3 1 1 3 1 0  Move down reveal choices           Application ID   bash   InstantSearch template InstantSearch js   InstantSearch js version 3 2 1   Application ID xxxxxxxxx   Search API key xxxxxxxxxxxxxxxxxxxxxxxxxxx   Index name xxxxxxx                             bash Used generate default result template                index     title     description     uri      content     date     banner     categories     images  Move down reveal choices                                        bash npm WARN deprecated circular json 0 3 3  CircularJSON maintenance only  fl atted its successor  npm WARN deprecated browserslist 1 7 7  Browserslist 2 fail reading Bro wserslist  3 0 config used tools           Created ais ecommerce demo app ais ecommerce demo app  Begin typing  cd ais ecommerce demo app npm start    Start building something awesome                npm   aligolia    JSON       API                      Algolia     API                              hugo algolia                      hugo aligolia               npm    yarn                         npm install hugo algolia  g             hugo                  config yaml     config toml       config yaml      Algolia    API       baseurl      DefaultContentLanguage   zh cn  hasCJKLanguage  true languageCode   zh cn  title   River s Site  theme     hugo     metaDataFormat   yaml  algolia  index       index  key       key  appID       id      API          algolia     API Keys        key Admin API Key          hugo                     hugo algolia  s JSON index file created public algolia json   updatedAt   2019 03 20T06 41 38 896Z   taskID  XXXXXXXXX                public        algolia json           algolia",
+        "objectID": "post/Hugo利用Algolia的静态搜索",
+        "date": "2019-03-19T13:29:41.000Z",
+        "draft": false,
+        "banner": "banners/changan.jpg",
+        "categories": [
+            "前端"
+        ],
+        "description": "",
+        "images": [
+            ""
+        ],
+        "menu": "",
+        "tags": [
+            "Algolia",
+            "静态搜索"
+        ],
+        "search": "/2019/03/19/基于Algolia的静态搜索/"
+    },
+    {
         "title": "剑侠情缘服务端和GM搭建教程",
         "uri": "post/剑侠情缘服务端和GM搭建教程",
         "content": "1H2G     Centos7 5                    1H2G      2H4G                      bash yum  y update          bash        systemctl stop firewalld          systemctl disable firewalld              nginx 1 14  Mysql5 6  PHP5 3                   ip           root    811051558 MYSQL      bash mysql  u root  p811051558 GRANT PRIVILEGES    root      IDENTIFIED  811051558  GRANT OPTION  FLUSH PRIVILEGES  quit systemctl restart mysqld     gcc    bash yum install gcc  y yum install gcc c    y yum install glibc   y    libstdc   so 6 0 20    usr lib64   bash cd  usr lib64 rm  rf libstdc   so 6 ln  s libstdc   so 6 0 20 libstdc   so 6 ldconfig   home zip        www zip     jxqy          www wwwroot xxx xxx xxx xxx         bash cd   unzip home zip chmod  R 777  home       unzip not found    bash yum install unzip       9     IP              home jxqy       FileServer ini   MYSQL     gateway ini   IP MYSQL     world_server ini   IP MYSQL   192 168 1 102       IP        IP         FileServer ini   MYSQL        GoJxHttpSetting   go jxhttp json go jxhttp_idip json MYSQL       IP              bash  home jxqy package idx  home jxqy package0 dat                     GatewayIP    IP         bash  www wwwroot xxx xxx xxx xxx android pack idx CP  www wwwroot xxx xxx xxx xxx android pack0 dat CP                     GatewayIP    IP Skip 0  Skip 1        ApkIDE  apk        UpdateUrlAndroid ini      UpdateUrlIPhone ini       bash cd  home jxqy    start sh         bash cd  home jxqy    stop sh                   bash netstat  tlnp              bash  www wwwroot xxx xxx xxx xxx android GameVersion  www wwwroot xxx xxx xxx xxx android GameVersion version txt        1 40011          1  bash  www wwwroot xxx xxx xxx xxx android GameVersion update_400008 ini     IP   apk                                           24                   br2a                xh2e GM       qugc                                                                                            4 0",
         "objectID": "post/剑侠情缘服务端和GM搭建教程",
         "date": "2018-11-12T07:16:43.000Z",
         "draft": false,
-        "banner": "",
+        "banner": "https://ws3.sinaimg.cn/large/005BYqpgly1g19bzxwyfmj30j80c10tx.jpg",
         "categories": [
             "服务器"
         ],
@@ -45,15 +89,15 @@
         "search": "/2011/01/11/标准文档/"
     },
     {
-        "title": "基于Algolia的静态搜索二",
-        "uri": "post/静态搜索二",
-        "content": "Algolia            node js Node                           npx  bash npx create instantsearch app ais ecommerce demo app     InstantSearch js       bash npx  installed 146 20 221s Creating new InstantSearch app ais ecommerce demo app    InstantSearch template  Use arrow keys  Web   Angular InstantSearch InstantSearch js React InstantSearch Vue InstantSearch Mobile InstantSearch Android InstantSearch iOS React InstantSearch Native         bash   InstantSearch template InstantSearch js   InstantSearch js version  Use arrow keys  Latest stable version  recommended    3 2 1 versions 3 2 1 3 2 0 3 1 1 3 1 0  Move down reveal choices           Application ID   bash   InstantSearch template InstantSearch js   InstantSearch js version 3 2 1   Application ID 7MXMJHTAW7   Search API key 1d9ed3a31ec6ef9514f2ad7d174a97c9   Index name MisakaSis                             bash Used generate default result template                index     title     description     uri      content     date     banner     categories     images  Move down reveal choices                                        bash npm WARN deprecated circular json 0 3 3  CircularJSON maintenance only  fl atted its successor  npm WARN deprecated browserslist 1 7 7  Browserslist 2 fail reading Bro wserslist  3 0 config used tools           Created ais ecommerce demo app ais ecommerce demo app  Begin typing  cd ais ecommerce demo app npm start    Start building something awesome                npm",
-        "objectID": "post/静态搜索二",
-        "date": "2019-03-19T13:29:41.000Z",
+        "title": "树莓派web生产环境搭建",
+        "uri": "post/树莓派web生产环境搭建",
+        "content": "tf          ssh         ssh         wpa_supplicant conf      country CN ctrlinterface DIR  var run wpasupplicant GROUP netdev update_config 1 network   ssid  72change  psk  XXXXXXXXXX  key_mgmt WPA PSK priority 1   network   ssid  TP XXXX  psk  XXXXXXXX  key_mgmt WPA PSK priority 2   priority                     ssh    pi   respberry sudo raspi config      bios        pi                               root   sudo passwd root        sudo nano  etc ssh sshd_config Ctrl   W        PermitRootLogin    PermitRootLogin without password   PermitRootLogin yes Ctrl   O        Ctrl   X        Nano     sudo nano  etc motd      ssh                                        sudo apt update sudo apt upgrade sudo apt dist upgrade rdate                                       rdate            rdate  sudo apt get install rdate sudo rdate  s time nist gov  s           s              sudo nano  etc rc local  exit0     rdate  s time nist gov       sudo reboot Lnmp      ssh root       apt get install python setuptools wget  O install sh http   download bt cn install install ubuntu sh    bash install sh      Bt Panel  http   192 168 166 222 8888 username  7bkdoe3g password  11c420ce                        lnmp     mysql mysql                       1     mysql5 1                       phpMyAdmin                        2        mysql MariaDB  apt get install mysql server mysql  uroot show databases  use mysql  select   user user    root  G            UPDATE user SET password PASSWORD         user  root   select   user user    root  G       Password     OK                      plugin   authplugin   mysqlnative_password              UPDATE user SET plugin  mysqlnativepassword  user  root   FLUSH PRIVILEGES  exit                       phpMyAdmin                      phpmyadmin             etc mysql mariadb conf d 50 server conf   bind address 127 0 0 1  bind address 0 0 0 0         phpmyadmin         phpmyadmin   config inc php   Servers host    127 0 0 1  cfg Servers   host      127 0 0 1       3            sqlite   mysql  apt get autoremove mysql server apt get install php5 fpm php5 sqlite sqlite sqlite3          wordpress    sqlite       sqlite",
+        "objectID": "post/树莓派web生产环境搭建",
+        "date": "2019-03-20T00:19:51.000Z",
         "draft": false,
-        "banner": "",
+        "banner": "https://ws3.sinaimg.cn/large/005BYqpgly1g19bhh4kcmj30j80a6gnb.jpg",
         "categories": [
-            "前端"
+            "服务器"
         ],
         "description": "",
         "images": [
@@ -61,9 +105,9 @@
         ],
         "menu": "",
         "tags": [
-            "Algolia",
-            "静态搜索"
+            "树莓派",
+            "lnmp"
         ],
-        "search": "/2019/03/19/基于Algolia的静态搜索二/"
+        "search": "/2019/03/20/树莓派web生产环境搭建/"
     }
 ]
